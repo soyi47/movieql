@@ -10,6 +10,6 @@ type Movie {
 
 type Query {
   movies(limit: Int, rating: Float): [Movie]!
-  movie(id: Int!): Movie
+  movie(id: String!): Movie
   suggestions(id: Int!): [Movie]!
 }
